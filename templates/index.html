@@ -8,6 +8,8 @@
     <form method="post" action="/generate">
         <label for="length">Password Length:</label>
         <input type="number" id="length" name="length" min="1" max="50" required>
+        <label for="capitalize">Capitalize:</label>
+        <input type="checkbox" id="capitalize" name="capitalize">
         <button type="submit">Generate Password</button>
     </form>
     {% if password %}
